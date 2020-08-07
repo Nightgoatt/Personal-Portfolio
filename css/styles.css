@@ -206,6 +206,10 @@ h1 {
     font-size: 2rem;
   }
 
+  .grid a {
+    margin-top: 2rem;
+  }
+
 }
 
 /*QUOTE-SECTION*/
