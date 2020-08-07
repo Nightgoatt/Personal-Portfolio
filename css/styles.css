@@ -66,7 +66,7 @@ nav ul li a:hover {
   color: white;
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 700px) {
   .nav {
     justify-content: center;
   }
