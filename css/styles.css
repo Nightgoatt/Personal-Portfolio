@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 @media (max-width: 800px) {
   html {
@@ -10,131 +10,30 @@
   }
 }
 
-
 /*BODY*/
 
 body {
-font-family: 'Poppins', sans-serif;
-}
-
-
-/*NAV*/
-
-nav {
-  background-color: #000;
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  max-width: 100%;
-}
-
-nav h3 {
-  color: #ff1a1a;
-  position: absolute;
-  margin-right: 80%;
-  font-size: 2rem;
-  top: 10px;
-  cursor: pointer;
-  max-width: 100%;
-}
-
-nav ul {
-  display: flex;
-  margin-right: 3rem;
-}
-
-nav ul li {
-  display: flex;
-  margin-left: 15px;
-  font-size: 1.6rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  display: block;
-padding: 1.1rem;
-  color: #ff1a1a;
-}
-
-nav ul li a:hover {
-  background-color: #ff1a1a;
-  border-radius: 2px;
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
   color: white;
-}
-
-@media (max-width: 700px) {
-  .nav {
-    justify-content: center;
-  }
-
-   nav li {
-    margin: 0 2rem;
-   text-align: center; 
-  }
-
-   nav h3 {
-    display: none;
-  }
 }
 
 /*WELCOME SECTION*/
 
-#welcome-section { 
-  background-image: 
-  linear-gradient(50deg,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.7)), url(neon.jpg);
+.welcome-section {
+  /*background-image: linear-gradient(50deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(neon.jpg);
   background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-} 
-
-#profile img{
-  width: 125px;
-  border-radius: 50%;
-  max-width: 100%;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height: 100vh;*/
 }
-
-
-h1 {
-  font-size: 4rem;
-  color:  #f00;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-#welcome-section p {
-  font-size: 1.7rem;
-  font-style: italic;
-  color:  #f00;
-}
-
-.icons {
-  font-size: 1.8rem;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-.icons a {
-  color: #f00;
-  padding: 5px;
-}
-
 
 /*PROJECTS SECTION*/
 
 #projects {
-  background-color: #cc0000;
   text-align: center;
   padding: 10rem 2rem;
 }
 
 #projects h2 {
-  color: #000;
   font-size: 3rem;
   margin: 0 auto 6rem auto;
   border-bottom: 3px solid #000;
@@ -144,7 +43,7 @@ h1 {
 .project-img {
   border-radius: 10px 10px 0 0;
   height: 350px;
-  max-width: 100%
+  max-width: 100%;
 }
 
 .project-tile {
@@ -152,7 +51,7 @@ h1 {
   width: 406px;
   text-decoration: none;
   max-width: 100%;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
 }
 
@@ -161,11 +60,10 @@ h1 {
 }
 
 .project-tile p {
-  color: #fff; 
+  color: #fff;
   font-size: 1.1rem;
   transition: color 0.3s ease-out;
 }
-
 
 .project-tile p:hover {
   color: #f00;
@@ -184,21 +82,20 @@ h1 {
 }
 
 @media (max-width: 800px) {
- #projects {
+  #projects {
     padding: 6rem 1rem;
     display: flex;
     flex-direction: column;
   }
 
   .grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
   }
 
   .grid img {
     height: auto;
-    
   }
 
   .grid p {
@@ -209,7 +106,6 @@ h1 {
   .grid a {
     margin-top: 2rem;
   }
-
 }
 
 /*QUOTE-SECTION*/
@@ -218,7 +114,7 @@ h1 {
   background-color: #000;
   height: 50vh;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   border-bottom: 7px solid #f00;
 }
@@ -239,7 +135,7 @@ h1 {
   color: #f00;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .quote-section h2 {
     margin: 0;
     font-size: 4rem;
@@ -260,14 +156,13 @@ h1 {
 /*FOOTER*/
 
 .footer-section {
- background-color: #000;
- height: 30vh;
+  background-color: #000;
+  height: 30vh;
 }
-
 
 footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 footer .contact-me {
@@ -307,11 +202,11 @@ footer .map-site ul li a {
   color: #f00;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .footer-section {
     height: 100%;
   }
-  
+
   footer .contact-me {
     font-size: 1.7rem;
   }

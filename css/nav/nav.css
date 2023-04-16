@@ -1,0 +1,77 @@
+/*NAV*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent);
+  max-width: 100%;
+}
+
+.logo_container {
+  display: flex;
+  margin-left: 5%;
+  align-items: center;
+  width: 50px;
+}
+
+.logo_b {
+  width: 100%;
+  object-fit: cover;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 3rem;
+}
+
+nav ul li {
+  display: flex;
+  margin-left: 15px;
+  font-size: 1.6rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 1.1rem;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li a::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, white, rgba(255, 255, 255, 0) 10%, transparent);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+nav ul li a:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 2rem;
+    text-align: center;
+  }
+
+  nav h3 {
+    display: none;
+  }
+}

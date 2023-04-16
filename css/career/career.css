@@ -1,0 +1,8 @@
+.career_header {
+  display: flex;
+  justify-content: center;
+}
+
+.career_header_title {
+  font-size: 2rem;
+}

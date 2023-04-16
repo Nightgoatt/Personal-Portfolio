@@ -4,9 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/about/about.css">
+  <link rel="stylesheet" href="css/welcome_section/welcome.css">
+  <link rel="stylesheet" href="css/nav/nav.css">
+  <link rel="stylesheet" href="css/skills/skills.css">
+  <link rel="stylesheet" href="css/career/career.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/397ca0392a.js" crossorigin="anonymous"></script>
   <title>Personal Portfolio</title>
 
@@ -14,43 +21,186 @@
 
 <body>
   <nav id="navbar">
-    <h3>Luis Méndez</h3>
+	<div class="logo_container" >
+	  <img src="./images/logo_blanco.png" alt="logo" class="logo_b"></img>
+	</div>
+	
     <ul>
-      <li><a href="#welcome-section">About</a></li>
+      <li><a href="#section_1">About</a></li>
       <li><a href="#projects">Portfolio</a></li>
       <li><a href="#contact-0">Contact</a></li>
     </ul>
-  </nav>
+  </nav> 
+  
+  <article id="section_1" class="welcome_section">	
+    <section class="profile">
+      <img class="profile_image" src="images/profile.jpg" alt="profile-photo">
+		<h1 class="welcome_section_h1" >Luis Méndez</h1>
+		<p class="welcome_section_p" >Student, Developer, Guitar Player</p>
+	
+		<div class="icons">
+			<a id="profile-link" href="https://github.com/Nightgoatt" target="_blank"><i class="fab fa-github"
+				id="github"></i></a>
 
-  <section id="welcome-section">
-    <div id="profile">
-      <img src="images/profile.jpg" alt="profile-photo">
-    </div>
-    <h1>Luis Méndez</h1>
-    <p>Student, Developer, Guitar Player</p>
-    <div class="icons">
-      <a id="profile-link" href="https://github.com/Nightgoatt" target="_blank"><i class="fab fa-github"
-          id="github"></i></a>
+			<a id="profile-link" href="https://twitter.com/Geist1A84" target="_blank"><i class="fab fa-twitter"
+				id="twitter"></i></a>
 
-      <a id="profile-link" href="https://twitter.com/Geist1A84" target="_blank"><i class="fab fa-twitter"
-          id="twitter"></i></a>
+			<a id="profile-link" href="https://www.youtube.com/channel/UCKP7t5_d2idyi7YXI8c9FDA?view_as=subscriber"
+				target="_blank"><i class="fab fa-youtube" id="youtube"></i></a>
 
-      <a id="profile-link" href="https://www.youtube.com/channel/UCKP7t5_d2idyi7YXI8c9FDA?view_as=subscriber"
-        target="_blank"><i class="fab fa-youtube" id="youtube"></i></a>
+			<a id="profile-link" href="https://www.instagram.com/nightgoatt/" target="_blank"><i class="fab fa-instagram"				id="instagram"></i></a>
 
-      <a id="profile-link" href="https://www.instagram.com/nightgoatt/" target="_blank"><i class="fab fa-instagram"
-          id="instagram"></i></a>
+			<a id="profile-link" href="mailto:la_mendez15@outlook.com" target="_blank"><i class="far fa-envelope"
+				id="mail"></i></a>
 
-      <a id="profile-link" href="mailto:la_mendez15@outlook.com" target="_blank"><i class="far fa-envelope"
-          id="mail"></i></a>
+			<a id="profile-link" href="https://www.freecodecamp.org/nightgoatt" target="_blank"><i
+				class="fab fa-free-code-camp" id="freecodecamp"></i></a>
+		</div>
+    </section>
+  </article>
 
-      <a id="profile-link" href="https://www.freecodecamp.org/nightgoatt" target="_blank"><i
-          class="fab fa-free-code-camp" id="freecodecamp"></i></a>
-    </div>
+  <section class="about_me_container">
+	<div class="about_me">
+		<h2 class="about_h2 rev">Software developer and a little more...</h2>
+		<p class="about_p rev">Hi! i'm a Software development student based on México, working to develop my experience in the tech industry. Currently freelance making: design, software and digital content management for SMEs in the: educational, artistic and cultural field, as well as audiovisual editing for digital plataforms and social networks.</p>
+	</div>
+	
+	<div class="cv_container rev">
+		<a href="https://drive.google.com/file/d/1p7iU_u4CLXmFdqriD8fMfHhg7l1CvirE/view?usp=sharing"target=”_blank">
+			<p>GET CV</p>
+			<i class="fa-solid fa-file"></i>
+		</a>
+	</div>
+
   </section>
 
+  <article class="skills">
+	<section class="skills_container">
+		<header class="skills_header">
+			<h3 class="skills_header_title">Soft Skills</h3>
+		</header>
+	
+		<div class="card_container">
+			<div class="card">
+				<img src="./images/icons/teamwork.svg" class="card_image">
+				<div class="card_info">
+					<p>Teamwork</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/adaptation.svg" class="card_image">
+				<div class="card_info">
+					<p>Adabtability</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/patience.svg" class="card_image">
+				<div class="card_info">
+					<p>Patience</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="skills_container">
+		<header class="skills_header">
+			<h3 class="skills_header_title">Skills</h3>
+		</header>
+	
+		<div class="card_container">
+			<div class="card">
+				<img src="./images/icons/javascript.svg" class="card_image">
+				<div class="card_info">
+					<p>Javascript</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/html.svg" class="card_image">
+				<div class="card_info">
+					<p>HTML</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/css.svg" class="card_image">
+				<div class="card_info">
+					<p>CSS</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/java.svg" class="card_image">
+				<div class="card_info">
+					<p>JAVA</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/python.svg" class="card_image">
+				<div class="card_info">
+					<p>Pyhton</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/mysql.svg" class="card_image">
+				<div class="card_info">
+					<p>MySQL</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/photoshop.svg" class="card_image">
+				<div class="card_info">
+					<p>Adobe Photoshop</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/illustrator.svg" class="card_image">
+				<div class="card_info">
+					<p>Adobe Illustrator</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/vegas.png" class="card_image">
+				<div class="card_info">
+					<p>Sony Vegas/Vegas pro</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="skills_container">
+		<header class="skills_header">
+			<h3 class="skills_header_title">Hobbies</h3>
+		</header>
+	
+		<div class="card_container">
+			<div class="card">
+				<img src="./images/icons/music.svg" class="card_image">
+				<div class="card_info">
+					<p>Music</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/read.svg" class="card_image">
+				<div class="card_info">
+					<p>Reading</p>
+				</div>
+			</div>
+			<div class="card">
+				<img src="./images/icons/drawing.svg" class="card_image">
+				<div class="card_info">
+					<p>Drawing</p>
+				</div>
+			</div>
+		</div>
+	</section>
+  </article>
+
+  <article class="career">
+		<header class="career_header">
+			<h3 class="career_header_title">Career</h3>
+		</header>
+  </article>
+ 
   <section id="projects">
-    <h2 class="header">These are some of my projects</h2>
+    <h2 class="header">Recent projects</h2>
     <div class="grid">
       <a class="project-tile" href="https://nightgoatt.github.io/Frank-Zappa-Tribute-Page/" target="_blank">
         <img src="images/tribute.png" alt="frankzappatribute" class="project-img">
@@ -80,9 +230,8 @@
   <section class="quote-section" id="section">
     <div class="quote-header">
       <h2>Let's work toghether...</h2>
-      <blockquote>“Man is an individual only because of his intangible memory. But memory cannot be defined, yet it
-        defines
-        mankind.”</blockquote> <cite>-Puppet Master</cite></p>
+      <blockquote>“If you'd like to talk about a project, just drop me a message at la_mendez15@outlook.com
+I'm currently Available for new opportunities to help others and improve my skills.”</blockquote></p>
     </div>
   </section>
 
@@ -93,7 +242,7 @@
         <h3>Contact me</h3>
         <ul>
           <li>Email: <a href="mailto:la_mendez15@outlook.com" target="_blank">la_mendez15@outlook.com</a></li>
-          <li>Twitter: <a href="https://twitter.com/TheNightgoatt" target="_blank">@TheNightgoatt</a></li>
+          <li>Twitter: <a href="https://twitter.com/TheNightgoatt" target="_blank">@Geist1A84</a></li>
         </ul>
       </div>
 
@@ -112,5 +261,7 @@
     </div>
   </div>
 </body>
+
+<script type="text/javascript" src="./main.js"></script>
 
 </html>
