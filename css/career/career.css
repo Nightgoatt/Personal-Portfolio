@@ -1,8 +1,63 @@
-.career_header {
+.career_info {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem;
 }
 
-.career_header_title {
-  font-size: 2rem;
+.c_title {
+  font-size: 3rem;
+}
+
+.c_img {
+  width: 300px;
+}
+
+/* CV Section */
+
+.cv_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+
+.cv_container a {
+  position: absolute;
+  color: white;
+  display: flex;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0.3em;
+  margin-bottom: 3px;
+  transition: all 0.6s ease-in-out;
+}
+
+.cv_container a:hover {
+  transition: all 0.6s ease-in-out;
+  box-shadow: inset -3.5em 0 0 0 white, inset 3.5em 0 0 0 white;
+  color: black;
+  border-radius: 5px;
+}
+
+.cv_container p {
+  font-size: 1.1em;
+}
+
+.cv_container i {
+  display: flex;
+  align-items: center;
+  margin-left: 0.6em;
+  font-size: 1em;
+}
+
+.cv_container.rev {
+  opacity: 0;
+  transform: translate(0);
+  transition: 1s all ease;
+}
+
+.cv_container.rev.active {
+  opacity: 1;
 }

@@ -116,23 +116,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 7px solid #f00;
+  border-bottom: 7px solid white;
 }
 
 .quote-section h2 {
   text-align: center;
-  color: #f00;
+  color: white;
   font-size: 4rem;
 }
 
 .quote-section blockquote {
-  color: #f00;
+  color: white;
   font-style: italic;
   margin: 10px 0 20px 0;
 }
 
 .quote-section cite {
-  color: #f00;
+  color: white;
 }
 
 @media (max-width: 800px) {
@@ -167,7 +167,7 @@ footer {
 
 footer .contact-me {
   margin: 30px 0 0 30px;
-  color: #f00;
+  color: white;
 }
 
 footer .contact-me ul li {
@@ -181,7 +181,7 @@ footer .contact-me ul li a {
 
 footer .map-site {
   margin: 30px 0 0 90px;
-  color: #f00;
+  color: white;
 }
 
 footer .map-site ul li {
@@ -199,7 +199,7 @@ footer .map-site ul li a {
 
 .copyright p {
   font-style: italic;
-  color: #f00;
+  color: white;
 }
 
 @media (max-width: 800px) {

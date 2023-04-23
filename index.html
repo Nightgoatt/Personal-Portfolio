@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/nav/nav.css">
   <link rel="stylesheet" href="css/skills/skills.css">
   <link rel="stylesheet" href="css/career/career.css">
+  <link rel="stylesheet" href="css/projects/projects.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -65,13 +66,7 @@
 		<p class="about_p rev">Hi! i'm a Software development student based on México, working to develop my experience in the tech industry. Currently freelance making: design, software and digital content management for SMEs in the: educational, artistic and cultural field, as well as audiovisual editing for digital plataforms and social networks.</p>
 	</div>
 	
-	<div class="cv_container rev">
-		<a href="https://drive.google.com/file/d/1p7iU_u4CLXmFdqriD8fMfHhg7l1CvirE/view?usp=sharing"target=”_blank">
-			<p>GET CV</p>
-			<i class="fa-solid fa-file"></i>
-		</a>
-	</div>
-
+	
   </section>
 
   <article class="skills">
@@ -194,37 +189,69 @@
   </article>
 
   <article class="career">
-		<header class="career_header">
-			<h3 class="career_header_title">Career</h3>
-		</header>
+	<div class="cv_container rev">
+		<a href="https://drive.google.com/file/d/1G2ZVjviJd1szsyvmJn6ERgkhG5OiiQs-/view?usp=share_link"target=”_blank">
+			<p>Get CV</p>
+			<i class="fa-solid fa-file-pdf"></i>
+		</a>
+	</div>
+
+
+	<section class="career_info">
+		<h3 class="c_title rev">Career</h3>
+		<div class="c_cert rev">
+			<a href="https://app.aluracursos.com/user/la-mendez15/fullCertificate/8b60cba4851f0adbfe4853d8d77e279a" target="_blank"><img class="c_img" src="./images/oracle-1.svg"></a>
+		</div>
+	</section>
   </article>
  
-  <section id="projects">
-    <h2 class="header">Recent projects</h2>
-    <div class="grid">
-      <a class="project-tile" href="https://nightgoatt.github.io/Frank-Zappa-Tribute-Page/" target="_blank">
-        <img src="images/tribute.png" alt="frankzappatribute" class="project-img">
-        <p class="project-title">Tribute Page</p>
-      </a>
+  <article id="projects">
+	  <section class="projects_container">
+		<h2 class="header">Recent projects</h2>
+		<div class="slide_show fade">
+		  <a class="project-tile" href="https://nightgoatt.github.io/Frank-Zappa-Tribute-Page/" target="_blank">
+			<img src="images/tribute.png" alt="frankzappatribute" class="project-img">
+			<p class="project-title">Tribute Page</p>
+		  </a>
+		</div>
 
-      <a class="project-tile" href="https://nightgoatt.github.io/GITS-Survey-Form/" target="_blank"> <img
-          src="images/survey.png" alt="surveyform" class="project-img" id="gits-survey">
-        <p class="project-title">Survey Form</p>
-      </a>
+		<div class="slide_show fade">
+		  <a class="project-tile" href="https://nightgoatt.github.io/GITS-Survey-Form/" target="_blank"> <img
+			  src="images/survey.png" alt="surveyform" class="project-img" id="gits-survey">
+			<p class="project-title">Survey Form</p>
+		  </a>
+		</div>
 
-      <a href="https://nightgoatt.github.io/Hanka-Robotics-Landing-Page/" target="_blank" class="project-tile"> <img
-          src="images/landing.png" alt="landing-page" class="project-img" id="hanka">
-        <p class="project-title">Landing Page</p>
-      </a>
+		<div class="slide_show fade">
+		  <a href="https://nightgoatt.github.io/Hanka-Robotics-Landing-Page/" target="_blank" class="project-tile"> <img
+			  src="images/landing.png" alt="landing-page" class="project-img" id="hanka">
+			<p class="project-title">Landing Page</p>
+		  </a>
+		</div>
+		
+		<div class="slide_show fade">
+		  <a href="https://nightgoatt.github.io/MGS-Documentation-Page/" target="_blank" id="mgs-0" class="project-tile">
+			<img src="images/doc.png" alt="documentation-page" class="project-img">
+			<p class="project-title">
+			  Documentation Page
+			</p>
+		  </a>
+		</div>
 
-      <a href="https://nightgoatt.github.io/MGS-Documentation-Page/" target="_blank" id="mgs-0" class="project-tile">
-        <img src="images/doc.png" alt="documentation-page" class="project-img">
-        <p class="project-title">
-          Documentation Page
-        </p>
-      </a>
-    </div>
-  </section>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+	   </div>
+
+	</section>
+  </article>
 
 
   <section class="quote-section" id="section">
