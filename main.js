@@ -6,8 +6,9 @@ function reveal() {
   for (var i = 0; i < rev.length; i++) {
     var windowH = window.innerHeight;
     var eTop = rev[i].getBoundingClientRect().top;
+    var eVisible = 100;
 
-    if (eTop < windowH) {
+    if (eTop < windowH - eVisible) {
       rev[i].classList.add('active');
     } else {
       rev[i].classList.remove('active');

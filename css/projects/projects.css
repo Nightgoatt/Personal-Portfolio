@@ -4,6 +4,32 @@
   margin: auto;
 }
 
+.projects {
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin: 0 auto 6rem auto;
+  border-bottom: 3px solid #000;
+  border-radius: 1px;
+}
+
+.project-img {
+  height: 400px;
+}
+
+.project-title {
+  padding: 1rem 0 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.project-tile {
+  text-decoration: none;
+}
+
 .slide_show {
   display: none;
 }
@@ -55,23 +81,7 @@
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
+/* Fading animation/Effects */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -85,3 +95,34 @@
     opacity: 1;
   }
 }
+
+.projects_header.rev {
+  opacity: 0;
+  transform: translate(0);
+  transition: 1s all ease;
+}
+
+.projects_header.rev.active {
+  opacity: 1;
+}
+
+.slide_show.rev {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s all ease;
+}
+
+.slide_show.rev.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .projects {
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
