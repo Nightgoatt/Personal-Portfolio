@@ -18,7 +18,15 @@
 
 .project-img {
   height: 400px;
+  border-radius: 10px;
+  transition: 0.6s all ease;
 }
+
+.project-img:hover {
+  transition: 0.6s all ease;
+  transform: scale(1.05);
+}
+
 
 .project-title {
   padding: 1rem 0 1.5rem;

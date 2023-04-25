@@ -30,7 +30,7 @@
 
 .rev {
   position: relative;
-  transform: translateX(-150px);
+  transform: translateX(-100px);
   opacity: 0;
   transition: 1s all ease;
 }
@@ -42,7 +42,7 @@
 
 .about_p.rev {
   position: relative;
-  transform: translateX(150px);
+  transform: translateX(100px);
   opacity: 0;
   transition: 1s all ease;
 }

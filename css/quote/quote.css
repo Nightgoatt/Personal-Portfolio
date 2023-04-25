@@ -1,0 +1,50 @@
+.quote-section {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 7px solid white;
+}
+
+.quote-section h2 {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  padding: 2rem;
+}
+
+.quote_header {
+  display: flex;
+}
+
+.b_quote {
+  font-size: 1.5rem;
+  width: 400px;
+  line-height: 1.2em;
+}
+
+/* Transition Effects */
+
+.work_h2.rev {
+  position: relative;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.work_h2.rev.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.b_quote.rev {
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.b_quote.rev.active {
+  transform: translateY(0);
+  opacity: 1;
+}
